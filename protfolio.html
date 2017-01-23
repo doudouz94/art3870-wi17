@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
     <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.orbit.js"></script>
+    <script src="js/doudou.js"></script>
     <title></title>
     <style>
      h1{
       font-family: 'Titillium Web', sans-serif;
     }
     </style>
+
     <style>
 #myImg {
     border-radius: 5px;
@@ -23,7 +25,7 @@
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.thumbnail:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -106,73 +108,71 @@
 </head>
 
 <body>
-
-
-        <div class="top-bar" id="example-menu">
-            <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                  <li><a href="index.html">Home</a></li>
-                  <li class="active"><a href="protfolio.html">Protfolio</a></li>
-                  <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-
-        </div>
+    <div class="top-bar" id="example-menu">
+    <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+    <li><a href="index.html">Home</a></li>
+    <li class="active"><a href="protfolio.html">Protfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    </ul>
     </div>
 
+    </div>
+
+
     <div class="row column">
-        <h1>Hello! This is the portfolio page.</h1>
+        <h1>This is the portfolio page.</h1>
         <p class="lead">I believe that one idea, or one photograph, can rapidly change the whole world.</p>
     </div>
     </div>
     <div class="row small-up-2 medium-up-3 large-up-4">
         <div class="column">
             <img id="myImg" class="thumbnail" width="300" height="300" src="images/love-lg.jpg">
-            <h5>Daddy and Babe.</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/red-lg.jpg">
-            <h5>Shoot by Canon 6D</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/beauty-lg.jpg">
-            <h5>Like your smile.</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/work-lg.jpg">
-            <h5>Stranger</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/team-lg.jpg">
-            <h5>The basketball team</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/hair-lg.jpg">
-            <h5>the student in CSUEB</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/Fan-lg.jpg">
-            <h5>After using photoshop</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/dog-lg.jpg">
-            <h5>My friend's dog</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/smile-lg.jpg">
-            <h5>Sweet girl</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/qin-lg.jpg">
-            <h5>My Chinese Friend Tory</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/torry2lg.jpg">
-            <h5>My model</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/read-lg.jpg">
-            <h5>Quiet around</h5>
+            <h5>My Site</h5>
         </div>
         <div class="column">
             <img class="thumbnail" width="300" height="300" src="images/gray-lg.jpg">
@@ -212,7 +212,6 @@
           img[i].onclick = function() {
               modal.style.display = "block";
               modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
           }
         }
 
@@ -224,33 +223,5 @@
         span.onclick = function() {
             modal.style.display = "none";
         }
-    </script>
-    <script language="JavaScript">
-    var myDate = new Date();
-
-    /* hour is before noon */
-    if ( myDate.getHours() < 12 )
-    {
-    document.getElementById('greeting').innerHTML = "Good Morning!";
-    }
-    else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
-    if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
-    {
-    document.getElementById('greeting').innerHTML = "Good Afternoon!";
-    }
-    else  /* the hour is after 5pm, so it is between 6pm and midnight */
-    if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
-    {
-    document.getElementById('greeting').innerHTML = "Good Evening!";
-    }
-    else  /* the hour is not between 0 and 24, so something is wrong */
-    {
-    document.getElementById('greeting').innerHTML = "I'm not sure what time it is!";
-    }
-
-    /* remove the following in your live script. It is for testing */
-    document.write("<br /><br /> The hour is: ")
-    document.write( myDate.getHours() );
-
     </script>
 </html>
