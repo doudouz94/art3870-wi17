@@ -1,0 +1,160 @@
+nav ul {
+ list-style-type: none;
+ text-align: center;
+ margin-top: 25px;
+ margin-bottom: 50px;
+}
+nav li {
+ display: inline;
+ font-family:'Dancing Script', cursive;
+
+ }
+nav a:link, nav a:visited{
+ color: black;
+ background-color: #FFA576;
+ border-radius: 20px;
+ text-decoration: none;
+ padding: 8px 9px;
+ margin: 20px;
+ font-size: 18px;
+}
+nav a:hover{
+  color: black;
+  background-color: #FFD63A;
+ text-decoration: none;
+ font-size: 18px;
+}
+nav a.current {
+ background-color: #E8705E;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #CC8F86;
+	overflow: scroll;
+}
+
+#text {
+  height: 100px;
+  background-color: #CF6B55;
+  border: 1px solid black;
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
+  font-family: 'Pacifico', cursive;
+}
+
+
+@-webkit-keyframes mymove {
+  50% {margin-left: 50px;}
+}
+
+
+@keyframes mymove {
+  50% {margin-left: 50px;}
+}
+
+
+.lines {
+	border: 5px solid #B4361F;
+	position: absolute;
+	left: 50%;
+	margin: 100px 0;
+	transform: translate(-50%, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 80vw;
+	flex-wrap: wrap;
+}
+
+.box {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	background: #B4361F;
+	margin: 30px 35px;
+}
+
+.box {
+	border: 2px solid #001f3f;
+}
+
+.box1:before {
+	background-color: #D98D9B;
+	content: "";
+	display: block;
+	height: 30px;
+	width: 30px;
+	animation: spin 6s ease-in-out infinite;
+}
+
+.box1:after {
+	content: "  rhythm rhythm rhythm rhythm rhythm rhythm rhythm rhythm rhythm rhythm ";
+	height: 140px;
+	width: 140px;
+	background-color: #B4361F;
+	box-sizing: border-box;
+	border: 2px solid #571A00;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  font-family: 'Pacifico', cursive;
+
+}
+.box2 {
+    margin: 35px 35px;
+    border: 1px solid black;
+    outline: coral solid 5px;
+    width: 160px;
+    height: 160px;
+    -webkit-animation: mmove 3s infinite;
+    animation: mmove 3s infinite;
+}
+
+
+@-webkit-keyframes mmove {
+    50% {outline-width: 20px;}
+}
+@keyframes mmove {
+    50% {outline-width: 20px;}
+}
+
+
+@keyframes atom {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	25% {
+		transform: translate(170px, 0);
+	}
+
+	50% {
+		transform: translate(170px, 170px);
+	}
+
+	75% {
+		transform: translate(0, 170px);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}

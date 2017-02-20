@@ -1,0 +1,200 @@
+nav ul {
+ list-style-type: none;
+ text-align: center;
+ margin-top: 25px;
+ margin-bottom: 50px;
+}
+nav li {
+ display: inline;
+ font-family:'Dancing Script', cursive;
+
+ }
+nav a:link, nav a:visited{
+
+ color: black;
+ background-color: #FFA576;
+ border-radius: 20px;
+ text-decoration: none;
+ padding: 8px 9px;
+ margin: 20px;
+ font-size: 18px;
+}
+nav a:hover{
+ color: black;
+ background-color: #FFD63A;
+ text-decoration: none;
+ font-size: 18px;
+}
+nav a.current {
+ background-color: #E8705E;
+}
+
+body{
+  background:black;
+}
+p{
+color: black;
+font-family: 'Caveat Brush', cursive;
+}
+#intro {
+
+    border: 10px dotted orange;
+    padding:35px;
+    background: #E0B569;
+    background-clip: content-box;
+}
+
+.color {
+  left:350px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin: 5em 0;
+  padding: 5px 5px 0 5px;
+  width: 220px;
+  height: 220px;
+
+}
+.color span {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  -webkit-animation: pulse 1.2s ease-out infinite;
+          animation: pulse 1.2s ease-out infinite;
+
+}
+.color span.a {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+  background: #477100;
+  box-shadow: 0 0 15px #5bccf4;
+}
+.color span.b {
+  -webkit-animation-delay: 0.66s;
+          animation-delay: 0.66s;
+  background: #F17305;
+  box-shadow: 0 0 15px #ffdd66;
+}
+.color span.c {
+  -webkit-animation-delay: 0.99s;
+          animation-delay: 0.99s;
+  background: #F8B212;
+  box-shadow: 0 0 15px #ff8887;
+}
+.color span.text {
+  -webkit-animation: none;
+          animation: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.07em;
+  -webkit-animation: text-color 2s linear infinite, rotate 5s ease-out infinite;
+          animation: text-color 2s linear infinite, rotate 5s ease-out infinite;
+}
+.color span.marg {
+  margin: 0 5px;
+}
+@-webkit-keyframes rotate {
+  0%,50%,100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0%,50%,100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes text-color {
+  0%,100% {
+    color: #FF20B8;
+    text-shadow: 0 0 6px #ff8887;
+  }
+  33% {
+    color: #E32122;
+    text-shadow: 0 0 6px #ffdd66;
+  }
+  66% {
+    color: ##FF8106;
+    text-shadow: 0 0 6px #484560;
+
+  }
+}
+@keyframes text-color {
+  0%,100% {
+    color: #FF20B8;
+    text-shadow: 0 0 6px #ff8887;
+  }
+  33% {
+    color: #E32122;
+    text-shadow: 0 0 6px #ffdd66;
+  }
+  66% {
+    color: ##FF8106;
+    text-shadow: 0 0 6px #484560;
+  }
+}
+@-webkit-keyframes pulse {
+  0%,100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  50% {
+    -webkit-transform: scale(0.17);
+            transform: scale(0.17);
+  }
+  75% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+@keyframes pulse {
+  0%,100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  50% {
+    -webkit-transform: scale(0.17);
+            transform: scale(0.17);
+  }
+  75% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
