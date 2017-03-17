@@ -1,0 +1,136 @@
+nav ul {
+ list-style-type: none;
+ text-align: center;
+ margin-top: 25px;
+ margin-bottom: 50px;
+}
+nav li {
+ display: inline;
+ font-family:'Dancing Script', cursive;
+
+ }
+nav a:link, nav a:visited{
+ color: black;
+ background-color: #FFA576;
+ border-radius: 20px;
+ text-decoration: none;
+ padding: 8px 9px;
+ margin: 20px;
+ font-size: 18px;
+}
+nav a:hover{
+  color: black;
+  background-color: #FFD63A;
+ text-decoration: none;
+ font-size: 18px;
+}
+nav a.current {
+ background-color: #E8705E;
+}
+p{
+  font-family: 'Caveat Brush', cursive;
+  font-size: 150%
+}
+body{
+  background:black;
+}
+#myDIV {
+    height: 150px;
+    background-color: black;
+    border: 1px solid orange;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+
+@-webkit-keyframes mymove {
+    50% {margin-top: 50px;}
+}
+
+@keyframes mymove {
+    50% {margin-top: 50px;}
+}
+p{
+color: #B03502;}
+
+.container{
+  margin:50px auto;
+  width: 60px;
+  height: 250px;
+  position:relative;
+  transform-origin:center bottom;
+  animation-name: flicker;
+  animation-duration:3ms;
+  animation-delay:200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.flame{
+  bottom:0;
+  position:absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform:rotate(-46deg) scale(2,2);
+}
+
+.yellow{
+  left:20px;
+  width: 30px;
+  height: 30px;
+  background:gold;
+  box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange{
+  left:10px;
+  width: 40px;
+  height: 40px;
+  background:orange;
+  box-shadow: 0px 0px 9px 4px orange;
+}
+
+.red{
+  left:5px;
+  width: 55px;
+  height: 55px;
+  background:OrangeRed;
+  box-shadow: 0px 0px 10px 5.8px Red;
+}
+
+.white{
+  left:15px;
+  bottom:-4px;
+  width: 30px;
+  height: 30px;
+  background:white;
+  box-shadow: 0px 0px 10px 4px white;
+}
+
+.circle{
+  border-radius: 50%;
+  position:absolute;
+}
+
+.blue{
+  width: 10px;
+  height: 10px;
+  left:25px;
+  bottom:-25px;
+  background: SlateBlue;
+  box-shadow: 0px 0px 15px 10px SlateBlue;
+}
+
+
+
+@keyframes flicker{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg)}
+  60%  {transform: rotate(1deg) scaleY(1.0);}
+  70%  {transform: rotate(-1deg) scaleY(1.1);}
+  80%  {transform: rotate(-2deg) scaleY(1,72);}
+  100% {transform: rotate(1deg);}
+}

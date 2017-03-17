@@ -1,0 +1,78 @@
+nav ul {
+ list-style-type: none;
+ text-align: center;
+ margin-top: 25px;
+ margin-bottom: 50px;
+}
+nav li {
+ display: inline;
+ font-family:'Dancing Script', cursive;
+
+ }
+nav a:link, nav a:visited{
+ color: black;
+ background-color: #FFA576;
+ border-radius: 20px;
+ text-decoration: none;
+ padding: 8px 9px;
+ margin: 20px;
+ font-size: 18px;
+}
+nav a:hover{
+  color: black;
+  background-color: #FFD63A;
+ text-decoration: none;
+ font-size: 18px;
+}
+nav a.current {
+ background-color: #E8705E;
+}
+h2{
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+
+}
+#div1 {
+    position: relative;
+    margin: auto;
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    border: 1px solid black;
+    -webkit-perspective: 125px;
+    -webkit-animation: mymove 5s infinite;
+    perspective: 200px;
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    50% {-webkit-perspective-origin: 10px 50%;}
+}
+
+@keyframes mymove {
+    50% {perspective-origin: 10px 50%;}
+}
+
+#div2 {
+font-family: 'Caveat Brush', cursive;
+padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: coral;
+    -webkit-transform: rotateX(30deg);
+    transform: rotateX(30deg);
+}
+#panda{
+background: url(images/panda.png);
+  width: 120px;
+  height:180px;
+  -webkit-animation:panda 0.5s steps(6) infinite;
+  animation: panda 0.5s steps(6) infinite;
+}
+@-webkit-keyframes panda{
+  from{background-position: 0px;}
+to{background-position: -960px;}
+@keyframes panda{
+  from{background-position: 0px;}
+to{background-position: -960px;}
+  }
